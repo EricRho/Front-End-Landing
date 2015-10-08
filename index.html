@@ -2,28 +2,29 @@
 
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<meta content="NOODP" name="robots">
-	<meta content="NOODP" name="googlebot">
-	<meta content="Wooter is a sports & activities marketplace in NYC. Search for any Sport, Activity, Coach or Rent a Court around you!" name="description">
-	<meta content="Wooter, company, marketplace, leagues, create, sport, activity, coach, rent, courts, court, football, baseball, softball, corporate, new, york, city, national, united, states" name="keywords">
-	<meta content="Carlos Marra" name="author">
+    <meta charset="UTF-8">
+    <title>Current Leagues</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="css/currentleagues.css"/>
+    <link rel="stylesheet" href="css/currentleagues_resp.css"/>
 
-	<title>Welcome to Wooter</title><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    <!---  ABOVE THE FOLD CONTENT, LOADS THE ABSOLUTE NECESSARY CSS SO USERS 
-    (especially mobile users) CAN SEE THE PAGE AS QUICK AS POSSIBLE..-->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/header.css" rel="stylesheet" type="text/css">
-    <link href="css/footer.css" rel="stylesheet" type="text/css">
-   <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,100,700,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="fonts/roboto_light_macroman/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="fonts/roboto_thin_macroman/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="fonts/roboto_regular_macroman/stylesheet.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/payment_methods.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
     <link href="css/mail_style.css" rel="stylesheet">
 
 
@@ -321,72 +322,70 @@
 									<h2>Pistons v Hawks</h2>
 								</div>
 								<div class="box_day_img">
-							<!-- <a href="#"><img src="images/icon-1.png"></a>
-							<a href="#"><img src="images/icon-2.png"></a>
-							<a href="#"><img src="images/icon-3.png"></a> -->
-						</div>
+									
+								</div>
+							</div>
+						</div> 
+						
 					</div>
+
 				</div> 
-				
 			</div>
+			<div class="container svhedule">
+				<div class="row title_svhedule">
+					<div class="name_title_svhedule">
+						<h2>Full Schedule</h2>
+					</div>
+					<div class="list_title_svhedule">
+						<select class="form-control month_view">
+							<option>Monthly View</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select> 
+					</div> 
+				</div>
+				<div class="row day_calendar_schedule">
+					<div id="calendar"></div>
 
-		</div> 
-	</div>
-	<div class="container svhedule">
-		<div class="row title_svhedule">
-			<div class="name_title_svhedule">
-				<h2>Full Schedule</h2>
-			</div>
-			<div class="list_title_svhedule">
-				<select class="form-control month_view">
-					<option>Monthly View</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-				</select> 
-			</div> 
-		</div>
-		<div class="row day_calendar_schedule">
-			<div id="calendar"></div>
+					<div class="main_box">
+						<div id="fuzz">
+							<div class="msgbox">  					
+								<div class="pull-left left_day">
+									<a class="close" href="#" ><img src="images/close.jpg"/></a>
+									<div class="current_date">
+										<span class="today">today</span>
+										<div class="box_d_and_m left_day_box_d_and_m">
+											<span class="day"></span><br>
+											<span class="month"></span>
+										</div>    						
+									</div>
+								</div>
+								<div class="items">
 
-			<div class="main_box">
-				<div id="fuzz">
-					<div class="msgbox">  					
-						<div class="pull-left left_day">
-							<a class="close" href="#" ><img src="images/close.jpg"/></a>
-							<div class="current_date">
-								<span class="today">today</span>
-								<div class="box_d_and_m left_day_box_d_and_m">
-									<span class="day"></span><br>
-									<span class="month"></span>
-								</div>    						
+								</div>    				
 							</div>
 						</div>
-						<div class="items">
-
-						</div>    				
 					</div>
+
 				</div>
 			</div>
-
-		</div>
-	</div>
-</section>
+		</section>
 
 
 
-<script>
-	var all_events = [
-	{
-		title: 'All Day Event',
-		start: '2015-02-01'
-	},
-	{
-		title: 'Long Event',
-		start: '2015-02-03',
-		end: '2015-02-05'
-	},
+		<script>
+			var all_events = [
+			{
+				title: 'All Day Event',
+				start: '2015-02-01'
+			},
+			{
+				title: 'Long Event',
+				start: '2015-02-03',
+				end: '2015-02-05'
+			},
 	// {
 	// 	title: 'P Event',
 	// 	start: '2015-02-09T12:00:00'
@@ -468,7 +467,7 @@
         events: all_events
     });
 
-	});
+});
 
 function getEvents(date){
 	var events = [];
